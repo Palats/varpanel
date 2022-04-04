@@ -1,0 +1,34 @@
+{
+  "name": "@palats/varpanel",
+  "version": "0.0.1",
+  "description": "UI overlay to show & control variables",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Palats/varpanel.git"
+  },
+  "keywords": [],
+  "author": "Pierre Palatin <pierre@palatin.fr>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Palats/varpanel/issues"
+  },
+  "homepage": "https://github.com/Palats/varpanel#readme",
+  "devDependencies": {
+    "typescript": "4.6.2"
+  },
+  "dependencies": {
+    "lit": "2.2.1"
+  }
+}
