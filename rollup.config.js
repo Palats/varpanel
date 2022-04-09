@@ -1,6 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
+import del from 'rollup-plugin-delete';
 
 const packageJson = require("./package.json");
 
@@ -15,6 +16,11 @@ export default [
             },
         ],
         plugins: [
+            del({
+                targets: 'dist/*',
+                runOnce: true,
+                verbose: true,
+            }),
             resolve(),
             typescript({ tsconfig: "./tsconfig.json" }),
         ],
